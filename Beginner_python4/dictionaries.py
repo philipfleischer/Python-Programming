@@ -53,6 +53,60 @@ for values in capitals.values():
     print(f"Print values in capitals.values() = {values}")
 print()
 
+print("Capital values:")
 values = capitals.values()
-for value in capital.values:
+for value in capitals.values():
     print(value)
+print()
+
+print("Capital items:")
+items = capitals.items()    # items =  [(), (), ...]
+print(items)
+print()
+
+for key, value in capitals.items():
+    print(f"{key} : {value}")
+print()
+
+# OUTPUT:
+# capitals.get('USA') = Washington D.C.
+# capitals.get('India') = New Dehli
+# capitals.get('Japan') = None
+
+# That capital does not exist in codebase.
+
+# {'USA': 'Washington D.C.', 'India': 'New Dehli', 'China': 'Beijing', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+
+# {'USA': 'Venezuela?', 'India': 'New Dehli', 'China': 'Beijing', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+
+# {'USA': 'Venezuela?', 'India': 'New Dehli', 'Russia': 'Moscow', 'Germany': 'Berlin'}
+
+# {'USA': 'Venezuela?', 'India': 'New Dehli', 'Russia': 'Moscow'}
+
+# {}
+
+# print(keys) = dict_keys(['USA', 'India', 'China', 'Russia'])
+
+# Print for key in capitals.key() = USA
+# Print for key in capitals.key() = India
+# Print for key in capitals.key() = China
+# Print for key in capitals.key() = Russia
+
+# Print values in capitals.values() = Washington D.C.
+# Print values in capitals.values() = New Dehli
+# Print values in capitals.values() = Beijing
+# Print values in capitals.values() = Moscow
+
+# Capital values:
+# Washington D.C.
+# New Dehli
+# Beijing
+# Moscow
+
+# Capital items:
+# dict_items([('USA', 'Washington D.C.'), ('India', 'New Dehli'), ('China', 'Beijing'), ('Russia', 'Moscow')])
+
+# USA : Washington D.C.
+# India : New Dehli
+# China : Beijing
+# Russia : Moscow
