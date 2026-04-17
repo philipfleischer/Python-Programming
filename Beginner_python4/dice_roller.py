@@ -1,0 +1,88 @@
+import random
+
+dice_art = {
+    1: ("┌─────────┐",
+        "│         │",
+        "│    ●    │",
+        "│         │",
+        "└─────────┘"),
+    2: ("┌─────────┐",
+        "│  ●      │",
+        "│         │",
+        "│      ●  │",
+        "└─────────┘"),
+    3: ("┌─────────┐",
+        "│  ●      │",
+        "│    ●    │",
+        "│      ●  │",
+        "└─────────┘"),
+    4: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│         │",
+        "│  ●   ●  │",
+        "└─────────┘"),
+    5: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│    ●    │",
+        "│  ●   ●  │",
+        "└─────────┘"),
+    6: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│  ●   ●  │",
+        "│  ●   ●  │",
+        "└─────────┘"),
+}
+
+dice = []
+total = 0
+num_of_dice = int(input("How many dice?: "))
+
+for die in range(num_of_dice):
+    dice.append(random.randint(1, 6))
+
+print("Vertical dices")
+# This nested loop prints them on new lines
+for die in range(num_of_dice):
+    for line in dice_art.get(dice[die]):
+        print(line)
+
+print("Horizontal dices")
+# This nested loop prints them on the same "level".
+# Every dice_art.get([0]) on the same line, and so on,
+# for all the dices, making them look side-by-side.
+# Since the dices has 5 lines making them up:
+for line in range(5):
+    for die in dice:
+        print(dice_art.get(die)[line], end="")
+    print()
+
+for die in dice:
+    total += die
+print(f"total: {total}")
+
+
+# OUTPUT:
+# How many dice?: 3
+# Horizontal dices
+# ┌─────────┐
+# │  ●   ●  │
+# │  ●   ●  │
+# │  ●   ●  │
+# └─────────┘
+# ┌─────────┐
+# │  ●   ●  │
+# │    ●    │
+# │  ●   ●  │
+# └─────────┘
+# ┌─────────┐
+# │  ●      │
+# │         │
+# │      ●  │
+# └─────────┘
+# Horizontal dices
+# ┌─────────┐┌─────────┐┌─────────┐
+# │  ●   ●  ││  ●   ●  ││  ●      │
+# │  ●   ●  ││    ●    ││         │
+# │  ●   ●  ││  ●   ●  ││      ●  │
+# └─────────┘└─────────┘└─────────┘
+# total: 13
