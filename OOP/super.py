@@ -67,3 +67,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#  OUTPUT:
+# circle.color = Brown
+# circle.is_filled = True
+# circle.radius = 10.98
+# circle.describe():
+# It is Brown and filled
+# It is a circle with an area of 378.5597 cm^2
+
+
+# square.color = Blue
+# square.is_filled = True
+# square.width = 89
+# square.describe():
+# It is Blue and filled
+
+
+# triangle.color = Orange
+# triangle.is_filled = False
+# triangle.width = 9980
+# triangle.height = 1
+# triangle.describe():
+# It is a circle with an area of 4990.0 cm^2
+# It is Orange and Not filled
