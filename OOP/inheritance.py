@@ -56,3 +56,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# OUTPUT:
+# --------- DOG -----------
+# Dogs name, dog.name = Scooby
+# Dog is alive?, dog.is_alive = True
+# Scooby is eating
+# Scooby is sleeping
+# WOOF!
+
+# --------- CAT -----------
+# Cats name, cat.name = Garfield
+# Cat is alive?, cat.is_alive = True
+# Garfield is eating
+# Garfield is sleeping
+# Meow?
+
+# --------- MOUSE -----------
+# Mouses name, mouse.name = Mickey
+# Mouse is alive?, mouse.is_alive = True
+# Mickey is eating
+# Mickey is sleeping
+# Squeak!?
