@@ -37,3 +37,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# OUTPUT:
+# Total number og students: 0
+# Total number og students: 3
+# Average GPA for the students -> 3.8
