@@ -129,3 +129,44 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# OUTPUT:
+# name: Spongebob gpa: 3.2
+# False
+# True
+# ******** Print using __str__ automatically: *******
+# 'The Hobbit' by J.R.R. Tolkien
+# 'Harry Potter and the Philosopher's Stone' by J.K. Rowling
+# 'The Lion, the Witch and the Wardrobe' by C.S. Lewis
+# ******** Print equal boolean using __eq__ ******
+# book1 == book2 -> False
+# book1 == book4 -> True
+# ******** Print LESS THAN using __lt__ ******
+# book2 < book3 -> False
+# ******** Print GREATER THAN using __gt__ ******
+# book2 > book3 -> True
+# ******** Print total num pages using __add__ ******
+# book1 (310) + book3 (173) -> 483 pages
+# ******** Print boolean for keyword in title using __contains__ ******
+# True
+# True
+# False
+# ******** Print item at index in Book() using __getitem__ ******
+#  Book titles:
+# The Hobbit
+# Harry Potter and the Philosopher's Stone
+# The Lion, the Witch and the Wardrobe
+#  Book Authors:
+# J.R.R. Tolkien
+# J.K. Rowling
+# C.S. Lewis
+#  Book number of pages:
+# 310
+# 223
+# 173
+#  Item non-existing scenario:
+# Key 'motorcycle' was not found
+# ******** Print values using __iter__ ******
+# The Hobbit
+# J.R.R. Tolkien
+# 310
