@@ -36,6 +36,9 @@ def main():
     d2.set_age(90)
     print(d2.get_age())
 
+    dogs_name = ["Tim", "Bill"]
+    dogs_age = [32, 14]
+
 
 
 if __name__ == "__main__":
